@@ -24,7 +24,7 @@ type HTTPPluginConfig struct {
 
 type SMPluginConfig struct {
 	URI         string   `json:"uri"`
-	IAMAuthType string   `json:"apikey"`
+	IAMAuthType string   `json:"iamAuthType"`
 	Secrets     []Secret `json:"secrets"`
 }
 

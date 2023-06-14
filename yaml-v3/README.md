@@ -20,5 +20,9 @@ c := &models.HTTPPluginConfig{}
 err = p.Config.Decode(c)
 ```
 
+## Running the example - 
 
-
+```
+cd yaml-v3
+go run cmd/main.go -conf config/config.yaml
+```

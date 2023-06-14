@@ -44,3 +44,9 @@ c := &models.HTTPPluginConfig{}
 p.Config.Unmarshal(c)
 ```
 
+## Running the example - 
+
+```
+cd yaml-v2
+go run cmd/main.go -conf config/config.yaml
+```

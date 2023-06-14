@@ -20,7 +20,7 @@ type HTTPPluginConfig struct {
 
 type SMPluginConfig struct {
 	URI         string   `yaml:"uri"`
-	IAMAuthType string   `yaml:"apikey"`
+	IAMAuthType string   `yaml:"iamAuthType"`
 	Secrets     []Secret `yaml:"secrets"`
 }
 

@@ -48,3 +48,10 @@ bytes, err = os.ReadFile(filepath.Clean(path))
 err = yaml.Unmarshal(bytes, &cfg)
 	
 ```
+
+## Running the example - 
+
+```
+cd yaml-normal
+go run cmd/main.go -conf config/config.yaml
+```

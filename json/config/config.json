@@ -1,0 +1,31 @@
+{
+    "metricsPath": "/metrics",
+    "metricsPort": 9121,
+    "hostPort": 3000,
+    "logLevel": "info",
+    "plugins" : [
+        {
+            "type": "http",
+            "config": {
+                "uri": "https://www.google.com",
+                "expectedResult": 200
+            }
+        },
+        {
+            "type": "secrets_manager",
+            "config": {
+                "uri": "https://70e21385-ccf8-437b-8f05-b77db3821603.us-south.secrets-manager.appdomain.cloud",
+                "iamAuthType": "apikey",
+                "secrets": [
+                    {
+                        "secretID": "someid1",
+                        "secretName": "someid2"
+                    },
+                    {
+                        "secretID": "anotherid1"
+                    }
+                ]
+            }
+        }
+    ]
+}

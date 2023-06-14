@@ -1,0 +1,11 @@
+metricsPath: "/metrics"
+metricsPort: 9121
+hostPort: 3000
+logLevel: "info"
+plugins :
+    - uri: "https://www.google.com"
+      expectedResult: 200
+    - uri: "https://www.ibm.com"
+      expectedResult: 200
+    - uri: "http://localhost:3000"
+      expectedResult: 200
